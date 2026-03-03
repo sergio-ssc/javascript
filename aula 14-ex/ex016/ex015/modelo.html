@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body onload="carregar()">
+<body">
+    
     <header>
-    <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
-
+    
     <section>
-        <div id="msg">
 
+        <div>
+            <p>Número: <input type="number" name="num" id="num"> <button onclick="contar()">Gerar Tabuada</button></p>
         </div>
-        <div id="img">
-            <img id="imagem" src="imagens/manha.jpg" alt="Imagem do dia">
+
+        <div>
+            <select name="tabuada" id="tab">
+                <option value="">Digite um Número</option>
+            </select size="10">
+            
         </div>
+
     </section>
 
     <footer>
@@ -27,6 +32,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>

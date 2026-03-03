@@ -8,7 +8,7 @@
 
 body{
     background-color: rgb(62, 62, 243);
-    font: normal 15pt arial;
+    font: normal 12pt arial;
 }
 
 header{
@@ -26,10 +26,14 @@ section{
 }
 
 div{
-    text-align: center;
     padding: 10px;
+    margin:0;
 }
 
+#box{
+    margin: 10px;
+    width: 150px
+}
 footer{
     
     margin-top: 20px;
@@ -40,6 +44,6 @@ footer{
 
 img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }

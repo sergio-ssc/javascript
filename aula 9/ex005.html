@@ -8,21 +8,30 @@
     <style>
         body{
             background-color: rgb(160, 96, 220);
-            color: white;
+            color: rgb(255, 255, 255);
             font: normal 15pt arial;
-
         }
+
     </style>
 </head>
+
 <body>
     <h1>Iniciando estudos com DOM</h1>
 
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
 
-    <div id="msg">Clique em mim</div>
+    <div id="msg">Clique em mim por favor</div>
 
     <script>
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+
+    </script>
+
+
+
+   <!--  <script>
         //var p1 = window.document.getElementsByTagName('p')[1]
         //p1.style.color = 'blue'
 
@@ -35,6 +44,6 @@
 
         var d = window.document.querySelector('div#msg')
         d.style.background = 'blue'
-    </script>
+    </script> -->
 </body>
 </html>
