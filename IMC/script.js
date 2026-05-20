@@ -9,16 +9,15 @@ function imc(){
     const altura = document.getElementById('altura').value;
     const res = document.getElementById('res');
 
-    if(nome !== '' && idade !== '' && altura !== ''){
+    if(nome !== '' && peso !== '' && altura !== ''){
 
+        const alturaMetros = altura / 100;
         const valorIMC = (peso / (altura * altura)).toFixed(2);
 
-        res.textContent = valorIMC;
+        res.textContent = `Olá ${nome}, seu IMC é ${valorIMC}`;
 
     } else {
         res.textContent = 'Preencha os campos acima!'
         return
     }
 }
-
-
