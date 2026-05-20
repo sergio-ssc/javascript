@@ -11,10 +11,22 @@ function imc(){
 
     if(nome !== '' && peso !== '' && altura !== ''){
 
-        const alturaMetros = altura / 100;
         const valorIMC = (peso / (altura * altura)).toFixed(2);
+        let classificacao = "";
 
-        res.textContent = `Olá ${nome}, seu IMC é ${valorIMC}`;
+        if (imc < 18.5) {
+                classificacao = "Abaixo do peso";
+            } else if (imc < 25) {
+                classificacao = "com o Peso normal";
+            } else if (imc < 30) {
+                classificacao = " com Sobrepeso";
+            } else {
+                classificacao = "com Obesidade";
+            }
+
+
+        res.textContent = `Olá ${nome}, seu IMC é ${valorIMC} e você esta ${classificacao}`;
+        
 
     } else {
         res.textContent = 'Preencha os campos acima!'
