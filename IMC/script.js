@@ -14,18 +14,20 @@ function imc(){
         const valorIMC = (peso / (altura * altura)).toFixed(2);
         let classificacao = "";
 
-        if (imc < 18.5) {
+        if (valorIMC < 18.5) {
                 classificacao = "Abaixo do peso";
-            } else if (imc < 25) {
+            } else if (valorIMC < 25) {
                 classificacao = "com o Peso normal";
-            } else if (imc < 30) {
-                classificacao = " com Sobrepeso";
+            } else if (valorIMC < 30) {
+                classificacao = "levemente acima do peso";
+            } else if (valorIMC < 35){
+                classificacao = "com Acima do peso";
             } else {
-                classificacao = "com Obesidade";
+                classificacao = "com Sobrepeso"
             }
 
 
-        res.textContent = `Olá ${nome}, seu IMC é ${valorIMC} e você esta ${classificacao}`;
+        res.textContent = `Olá ${nome}, seu IMC é ${valorIMC} e você está ${classificacao}`;
         
 
     } else {
